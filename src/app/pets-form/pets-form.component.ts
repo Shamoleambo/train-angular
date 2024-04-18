@@ -5,4 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './pets-form.component.html',
   styleUrls: ['./pets-form.component.css'],
 })
-export class PetsFormComponent {}
+export class PetsFormComponent {
+  petOwnerName: string;
+}
