@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-pets-form',
@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./pets-form.component.css'],
 })
 export class PetsFormComponent {
+  @Output() formSubmit = new EventEmitter<{ type: string; content: string }>();
   petOwnerName: string;
+
+  onFormSubmit() {
+    this.formSubmit.emit({ type: 'formSubmit', content: this.petOwnerName });
+  }
 }
