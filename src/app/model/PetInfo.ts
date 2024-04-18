@@ -1,3 +1,3 @@
 export class PetInfo {
-  constructor(public petOwnerName: string) {}
+  constructor(private petOwnerName: string, private petName: string) {}
 }

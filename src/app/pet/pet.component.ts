@@ -6,4 +6,5 @@ import { Component, Input } from '@angular/core';
 })
 export class PetComponent {
   @Input() petOwnerName: string;
+  @Input() petName: string;
 }

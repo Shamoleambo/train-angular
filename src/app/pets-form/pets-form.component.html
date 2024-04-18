@@ -2,6 +2,8 @@
   <div class="mb-3">
     <label for="petOwnerName" class="form-label">Owner's Name:</label>
     <input type="text" class="form-control" id="petOwnerName" name="petOwnerName" [(ngModel)]="petOwnerName" />
+    <label for="petName" class="form-label">Pet's Name:</label>
+    <input type="text" class="form-control" id="petName" name="petName" [(ngModel)]="petName">
   </div>
   <button type="submit" class="btn btn-primary" (click)="onFormSubmit()">Submit</button>
 </form>

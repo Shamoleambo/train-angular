@@ -10,8 +10,7 @@ export class AppComponent {
   title = 'proof';
   pets: PetInfo[] = [];
 
-  onFormSubmitted(event: { name: string; content: string }) {
-    this.pets.push(new PetInfo(event.content));
-    console.log('App')
+  onFormSubmitted(event: { name: string; content: PetInfo }) {
+    this.pets.push(event.content);
   }
 }

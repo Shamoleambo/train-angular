@@ -3,7 +3,7 @@
   <app-pets-form (formSubmit)="onFormSubmitted($event)"></app-pets-form>
   <ul *ngFor="let pet of pets" class="list-group">
     <li class="list-group-item">
-      <app-pet [petOwnerName]="pet.petOwnerName"></app-pet>
+      <app-pet [petOwnerName]="pet.petOwnerName" [petName]="pet.petName"></app-pet>
     </li>
   </ul>
 </div>
